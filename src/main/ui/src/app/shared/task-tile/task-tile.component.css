@@ -1,0 +1,26 @@
+.task{
+    box-shadow: rgb(15 15 15 / 10%) 0px 0px 0px 1px, rgb(15 15 15 / 10%) 0px 2px 4px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.taskName, .timeLeft{
+    padding: 0px;
+}
+
+.taskName{
+    font-weight: bold;
+}
+
+.timeLeft{
+    font-size: small;
+}
+
+.task:hover{
+    background: #f3f3f3;
+}
+
+.cdk-drag-placeholder {
+    background: rgba(255, 255, 255, 0.2);
+}

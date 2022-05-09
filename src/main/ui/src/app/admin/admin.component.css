@@ -1,0 +1,49 @@
+fa-icon{
+    font-size: large;
+    margin: 5px;
+}
+
+td, th{
+    vertical-align: middle;
+}
+
+.IconPreview{
+    color: #0079D3;
+}
+
+.IconPreview:hover{
+    color: rgba(0, 121, 211, 0.7);
+}
+
+.IconAdd{
+    color: green;
+}
+
+.IconAdd:hover{
+    color: rgba(0, 128, 0, 0.7);
+}
+
+.container-fluid{
+    padding-top: 10px;
+}
+
+.tableHeader{
+    font-size: medium;
+    width: fit-content;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.todoHeader{
+    background: #ffe2dd;
+}
+
+.inprogressHeader{
+    background: #fdecc8;
+}
+
+.doneHeader{
+    background: #dbeddb;
+}

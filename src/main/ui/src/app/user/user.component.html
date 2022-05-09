@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row justify-content-center g-md-5 g-sm-0" style="margin-left: 10px; margin-right: 10px">
+        <div class="col-lg-3 col-md-4 tableColumn" id="todo-0" cdkDropList #todo="cdkDropList" [cdkDropListData]="todoTasks" [cdkDropListConnectedTo]="[inprogress]" (cdkDropListDropped)="dropped($event)">
+            <div class="row tableHeader justify-content-center todoHeader">TODO</div>
+            <app-task-tile [tasks]="todoTasks"></app-task-tile>
+        </div>
+        <div class="col-lg-3 col-md-4 tableColumn" id="inprogress-1" cdkDropList #inprogress="cdkDropList" [cdkDropListData]="inprogressTasks" [cdkDropListConnectedTo]="[todo, done]" (cdkDropListDropped)="dropped($event)">
+            <div class="row tableHeader justify-content-center inprogressHeader">IN PROGRESS</div>
+            <app-task-tile [tasks]="inprogressTasks"></app-task-tile>
+        </div>
+        <div class="col-lg-3 col-md-4 tableColumn" id="done-2" cdkDropList #done="cdkDropList" [cdkDropListData]="doneTasks" [cdkDropListConnectedTo]="[inprogress]" (cdkDropListDropped)="dropped($event)">
+            <div class="row tableHeader justify-content-center doneHeader">DONE</div>
+            <app-task-tile [tasks]="doneTasks"></app-task-tile>
+        </div>
+    </div>
+</div>

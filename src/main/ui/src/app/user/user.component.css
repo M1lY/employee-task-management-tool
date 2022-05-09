@@ -1,0 +1,30 @@
+.tableColumn{
+    padding-top: 10px;
+    /*margin-top: 10px;*/
+    /*margin: 10px;*/
+}
+
+.tableHeader{
+    font-size: medium;
+    width: fit-content;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.todoHeader{
+    background: #ffe2dd;
+}
+
+.inprogressHeader{
+    background: #fdecc8;
+}
+
+.doneHeader{
+    background: #dbeddb;
+}
+
+.col-lg-3{
+    transition: all 400ms ease;
+}

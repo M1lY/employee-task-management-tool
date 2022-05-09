@@ -1,0 +1,23 @@
+<div *ngIf="flag">
+    <div cdkDrag class="row task" *ngFor="let task of tasks">
+        <div class="row">
+            <span class="taskName">{{task.taskName}}</span>
+        </div>
+        <div class="row">
+            <span *ngIf="!done" class="timeLeft">{{task.timeLeft}}</span>
+            <span *ngIf="done" style="color: green" class="timeLeft">{{task.timeLeft}}</span>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!flag">
+    <div class="row task" *ngFor="let task of tasks">
+        <div class="row">
+            <span class="taskName">{{task.taskName}}</span>
+        </div>
+        <div class="row">
+            <span *ngIf="!done" class="timeLeft">{{task.timeLeft}}</span>
+            <span *ngIf="done" style="color: green" class="timeLeft">{{task.timeLeft}}</span>
+        </div>
+    </div>
+</div>

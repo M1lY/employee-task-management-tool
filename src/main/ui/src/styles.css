@@ -1,0 +1,46 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+.login,
+.signup {
+    background-color: #0079D3;
+    color: aliceblue;
+    fill: #0079D3;
+    border: 1px solid #0079D3;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;
+}
+
+html{
+    padding: 0;
+    height: 100%;
+}
+body{
+    margin-top: 64px;
+    /*height: 100%;*/
+}
+
+.cdk-drop-list-dragging .cdk-drag {
+    transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.cdk-drag-animating {
+    transition: transform 100ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.cdk-overlay-container {
+    z-index: 2000 !important;
+}
+
