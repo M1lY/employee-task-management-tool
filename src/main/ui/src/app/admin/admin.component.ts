@@ -74,7 +74,6 @@ export class AdminComponent implements OnInit {
             this.inprogressTasks=[];
             this.doneTasks=[];
             if(user) this.user=user;
-            console.log(user);
             button.setAttribute('data-bs-target', '#userPreviewModal');
             this.taskService.getTasksByUsername(this.user.username).subscribe(task => {
                 this.tasks=task;
@@ -84,7 +83,6 @@ export class AdminComponent implements OnInit {
                     else this.doneTasks.push(t);
                 }
             })
-            console.log(this.tasks);
         }
         container!.appendChild(button);
         button.click();
@@ -92,10 +90,6 @@ export class AdminComponent implements OnInit {
 
     onClick(event: any){
         this.picker.open();
-    }
-
-    c(event: any){
-        console.log(event);
     }
 
     addTask() {
@@ -113,7 +107,6 @@ export class AdminComponent implements OnInit {
 
         this.taskService.createTask(this.createTaskRequestPayload).subscribe(data => {
             document.getElementById('closeModalButton')!.click();
-            console.log(data);
         }, error => {
             console.log(error);
         })

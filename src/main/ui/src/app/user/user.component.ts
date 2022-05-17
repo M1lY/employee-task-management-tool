@@ -45,8 +45,6 @@ export class UserComponent implements OnInit {
             let taskId = $event.container.data[$event.currentIndex].taskId;
             let statusId = $event.container.id.slice($event.container.id.length-1,$event.container.id.length);
 
-            console.log($event.container);
-
             this.taskService.changeStatus(taskId, Number(statusId));
         }
     }

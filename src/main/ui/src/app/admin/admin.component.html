@@ -20,9 +20,6 @@
                         <td style="text-align: center">
                             <a (click)="onOpenModal(user,'preview')"><fa-icon class="IconPreview" [icon]="faEye"></fa-icon></a>
                             <a (click)="onOpenModal(user,'add')"><fa-icon class="IconAdd" [icon]="faPlusSquare"></fa-icon></a>
-<!--                            <a type="button" data-bs-toggle="modal" data-bs-target="#addTaskModal" data-bs-whatever="{{user}}">-->
-<!--                                <fa-icon class="IconAdd" [icon]="faPlusSquare"></fa-icon>-->
-<!--                            </a>-->
                         </td>
                     </tr>
                 </tbody>
@@ -68,8 +65,6 @@
                             </ngx-mat-datetime-picker>
                         </mat-form-field>
                     </div>
-<!--                </form>-->
-<!--            </div>-->
             <div class="modal-footer">
                 <button id="closeModalButton" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                 <button type="submit" class="btn btn-primary">Add task</button>
